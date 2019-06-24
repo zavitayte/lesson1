@@ -23,8 +23,10 @@ def greet_user (bot,update):
 
 # функция которая будет отвечать пользователю
 def talk_to_me (bot,update):
-    user_text = update.message.text
-    print(user_text)
+    user_text = "Привет {}! Ты написал: {}".format(update.message.chat.first_name,update.message.text)
+    logging.info("User: %s, Chat id: %s, Message: %s", update.message.chat.username, 
+                    update.message.chat.id, update.message.text)
+    print(update.message)
     update.message.reply_text(user_text)
 
 # функция которая соединяется с платформой телеграм , тело бота

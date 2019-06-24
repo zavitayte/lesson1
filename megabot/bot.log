@@ -1,0 +1,41 @@
+2019-06-24 16:35:34,738- INFO - Бот запускается
+2019-06-24 16:35:44,422- INFO - нажали старт /start
+2019-06-24 16:38:09,616- INFO - нажали старт /start
+2019-06-24 16:44:40,819- INFO - Received signal 2 (SIGINT), stopping...
+2019-06-24 16:44:46,353- WARNING - Exiting immediately!
+2019-06-24 16:44:51,408- INFO - Бот запускается
+2019-06-24 16:44:57,216- INFO - нажали старт /start
+2019-06-24 16:45:00,902- ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Zav\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Zav\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 26, in talk_to_me
+    user_text = "Привет {}! Ты написал: {}!".format(update.message.chat.firstname, update.message.text)
+AttributeError: 'Chat' object has no attribute 'firstname'
+2019-06-24 16:45:40,538- INFO - Received signal 2 (SIGINT), stopping...
+2019-06-24 16:45:45,737- INFO - Бот запускается
+2019-06-24 16:45:52,602- INFO - нажали старт /start
+2019-06-24 16:45:54,523- INFO - нажали старт /start
+2019-06-24 16:46:03,847- ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Zav\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Zav\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 26, in talk_to_me
+    user_text = "Привет {}! Ты написал: {}!".format(update.message.chat.firstname, update.message.text)
+AttributeError: 'Chat' object has no attribute 'firstname'
+2019-06-24 16:48:00,104- INFO - Received signal 2 (SIGINT), stopping...
+2019-06-24 16:48:05,574- INFO - Бот запускается
+2019-06-24 16:48:08,987- INFO - нажали старт /start
+2019-06-24 16:51:24,862- INFO - Received signal 2 (SIGINT), stopping...
+2019-06-24 16:51:30,026- INFO - Бот запускается
+2019-06-24 16:51:33,232- INFO - нажали старт /start
+2019-06-24 16:58:40,252- INFO - Received signal 2 (SIGINT), stopping...
+2019-06-24 16:58:45,896- INFO - Бот запускается
+2019-06-24 16:58:49,355- INFO - нажали старт /start
+2019-06-24 16:58:58,093- INFO - User: forceneo, Chat id: 377493794, Message: privet как твои дела
+2019-06-24 17:01:37,987- WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x000001DA3266D7F0>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot838847981:AAHbb1R0ajml71CU83AanDujvM1IYj5Gml4/getUpdates
+2019-06-24 17:01:42,596- INFO - Received signal 2 (SIGINT), stopping...
